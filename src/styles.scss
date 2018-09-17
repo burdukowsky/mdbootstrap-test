@@ -1,0 +1,39 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Override MDBootstrap variables
+$primary-color: #548af4;
+$primary-color-dark: #1949a1;
+$secondary-color: #b07ecc;
+$secondary-color-dark: #9f46cc;
+$info-color: #44bae5;
+$info-color-dark: #149ecc;
+$success-color: #16c85d;
+$success-color-dark: #097e3a;
+$warning-color: #ffc046;
+$warning-color-dark: #ff9e1a;
+$danger-color: #ff4758;
+$danger-color-dark: #cc0f11;
+
+// MDBootstrap
+@import "~mdbootstrap/scss/mdb";
+
+// Custom styles
+$squareSide: 250px;
+$verticalPad: $squareSide / 4;
+
+.example {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  width: $squareSide;
+  padding-top: $verticalPad;
+  padding-bottom: $verticalPad;
+  margin: 25px;
+  &.example-bg {
+    color: white;
+  }
+  &.example-text {
+    background-color: #f9f9f9;
+  }
+}
